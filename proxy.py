@@ -36,6 +36,8 @@ class Handler(BaseRequestHandler):
 
     def generate_cert(self, host: str):
         path = f'certs/{host}.crt'
+        if not os.path.exists('certs'):
+            os.makedirs('certs')
         if not os.path.exists(path):
             with open(path, 'w') as f:
                 subprocess.call(['./gen_cert.sh', host, str(int(random() * 1000000000))], stdout=f)

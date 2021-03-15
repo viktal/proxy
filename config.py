@@ -1,5 +1,5 @@
 import os
-SERVER_ADDRESS = ('0.0.0.0', 8081)
+SERVER_ADDRESS = ('0.0.0.0', 8080)
 WEB_PORT = 8000
 CONTENT_TYPES = ('application', 'text')
 COUNT_REQUESTS = 100

@@ -8,4 +8,4 @@ COPY . .
 
 CMD python proxy.py & python web_interface.py
 
-EXPOSE 8000 8081
+EXPOSE 8000 8080
