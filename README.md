@@ -1,8 +1,9 @@
 # proxy
 
-## Выполнила Талмаза Виктория 
-
-http/https proxy, repeater and dirbuster в рамках домашнего задания по курсу Безопасность интернет-приложений ([ссылка](https://docs.google.com/document/d/1QaQ-Nc_eE4dBKZwQbA4E2o8pOJ3CktgsKDAn375iY24/edit#)).
+**Функционал**  
+proxy - проксирование http и https запросов с сохранением в базу sqlite для последующего просмотра   
+repeater - повтор проксированных запросов из базы  
+dirbuster - сканер уязвимости. В url запроса подставляются [слова из списка](https://github.com/maurosoria/dirsearch/blob/master/db/dicc.txt) и проверяется код ответа    
 
 Run Dockerfile:  
 ```
